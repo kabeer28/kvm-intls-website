@@ -547,7 +547,7 @@ function HomePage() {
                   </div>
                   <div className="flex justify-between">
                     <span className="text-gray-400 text-xs sm:text-sm">Saturday</span>
-                    <span className="text-xs sm:text-sm">9:00 AM - 4:00 PM</span>
+                    <span className="text-xs sm:text-sm">9:00 AM - 5:00 PM</span>
                   </div>
                   <div className="flex justify-between">
                     <span className="text-gray-400 text-xs sm:text-sm">Sunday</span>
