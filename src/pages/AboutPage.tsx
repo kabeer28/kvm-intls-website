@@ -10,13 +10,34 @@ function AboutPage() {
 
       {/* Hero Section */}
       <section className="relative bg-kvm-black text-white overflow-hidden">
-        <div className="absolute inset-0 bg-kvm-black"></div>
-        <div className="absolute inset-0 opacity-30"
-          style={{
-            backgroundImage: `repeating-linear-gradient(45deg, transparent, transparent 30px, rgba(245, 223, 114, 0.3) 30px, rgba(245, 223, 114, 0.3) 33px, transparent 33px, transparent 80px)`,
-            backgroundSize: '120px 120px',
-            animation: 'flow 30s linear infinite reverse',
-          }}>
+        {/* Background Elements - Exact copy from HomePage */}
+        <div className="absolute inset-0 bg-kvm-black">
+          {/* Main gradient overlay */}
+          <div className="absolute inset-0 bg-gradient-to-br from-kvm-black via-kvm-black/95 to-kvm-black/80" />
+          
+          {/* Flowing diagonal lines - primary pattern */}
+          <div 
+            className="absolute inset-0 opacity-50"
+            style={{
+              backgroundImage: `repeating-linear-gradient(45deg, transparent, transparent 15px, rgba(245, 223, 114, 0.4) 15px, rgba(245, 223, 114, 0.4) 17px, transparent 17px, transparent 40px)`,
+              backgroundSize: '80px 80px',
+              animation: 'flow 20s linear infinite',
+              maskImage: 'radial-gradient(ellipse at center, transparent 60%, black 70%)',
+              WebkitMaskImage: 'radial-gradient(ellipse at center, transparent 60%, black 90%)'
+            }}
+          />
+          
+          {/* Secondary flowing lines - offset for depth */}
+          <div 
+            className="absolute inset-0 opacity-30"
+            style={{
+              backgroundImage: `repeating-linear-gradient(45deg, transparent, transparent 30px, rgba(245, 223, 114, 0.3) 30px, rgba(245, 223, 114, 0.3) 33px, transparent 33px, transparent 80px)`,
+              backgroundSize: '120px 120px',
+              animation: 'flow 30s linear infinite reverse',
+              maskImage: 'radial-gradient(ellipse at center, transparent 50%, black 80%)',
+              WebkitMaskImage: 'radial-gradient(ellipse at center, transparent 50%, black 80%)'
+            }}
+          />
         </div>
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24">
           <div className="text-center">
@@ -168,13 +189,34 @@ function AboutPage() {
 
       {/* Call to Action */}
       <section className="py-16 bg-kvm-black text-white relative overflow-hidden">
-        <div className="absolute inset-0 bg-kvm-black"></div>
-        <div className="absolute inset-0 opacity-30"
-          style={{
-            backgroundImage: `repeating-linear-gradient(45deg, transparent, transparent 30px, rgba(245, 223, 114, 0.3) 30px, rgba(245, 223, 114, 0.3) 33px, transparent 33px, transparent 80px)`,
-            backgroundSize: '120px 120px',
-            animation: 'flow 30s linear infinite reverse',
-          }}>
+        {/* Background Elements - Exact copy from HomePage */}
+        <div className="absolute inset-0 bg-kvm-black">
+          {/* Main gradient overlay */}
+          <div className="absolute inset-0 bg-gradient-to-br from-kvm-black via-kvm-black/95 to-kvm-black/80" />
+          
+          {/* Flowing diagonal lines - primary pattern */}
+          <div 
+            className="absolute inset-0 opacity-50"
+            style={{
+              backgroundImage: `repeating-linear-gradient(45deg, transparent, transparent 15px, rgba(245, 223, 114, 0.4) 15px, rgba(245, 223, 114, 0.4) 17px, transparent 17px, transparent 40px)`,
+              backgroundSize: '80px 80px',
+              animation: 'flow 20s linear infinite',
+              maskImage: 'radial-gradient(ellipse at center, transparent 60%, black 70%)',
+              WebkitMaskImage: 'radial-gradient(ellipse at center, transparent 60%, black 90%)'
+            }}
+          />
+          
+          {/* Secondary flowing lines - offset for depth */}
+          <div 
+            className="absolute inset-0 opacity-30"
+            style={{
+              backgroundImage: `repeating-linear-gradient(45deg, transparent, transparent 30px, rgba(245, 223, 114, 0.3) 30px, rgba(245, 223, 114, 0.3) 33px, transparent 33px, transparent 80px)`,
+              backgroundSize: '120px 120px',
+              animation: 'flow 30s linear infinite reverse',
+              maskImage: 'radial-gradient(ellipse at center, transparent 50%, black 80%)',
+              WebkitMaskImage: 'radial-gradient(ellipse at center, transparent 50%, black 80%)'
+            }}
+          />
         </div>
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <div className="animate-fade-in-up">
