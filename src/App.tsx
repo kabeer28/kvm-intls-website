@@ -5,7 +5,7 @@ import AboutPage from './pages/AboutPage';
 
 function App() {
   return (
-    <Router>
+    <Router basename="/kvm-intls-website">
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/products" element={<ProductsPage />} />
