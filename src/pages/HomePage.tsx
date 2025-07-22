@@ -533,7 +533,7 @@ function HomePage() {
                   </div>
                   <div>
                     <h4 className="font-semibold text-sm sm:text-base">Email</h4>
-                    <a href="mailto:info@kvmtruckparts.com" className="text-xs sm:text-sm text-gray-400 hover:text-kvm-yellow transition-colors mt-0.5 block break-all">info@kvmtruckparts.com</a>
+                    <a href="mailto:info@kvmintls.com" className="text-xs sm:text-sm text-gray-400 hover:text-kvm-yellow transition-colors mt-0.5 block break-all">info@kvmintls.com</a>
                   </div>
                 </div>
               </div>
@@ -583,7 +583,7 @@ function HomePage() {
                       value={formData.email}
                       onChange={handleInputChange}
                       className="w-full px-3 sm:px-4 py-2.5 text-sm sm:text-base bg-white/5 border border-gray-700 rounded-lg focus:ring-2 focus:ring-kvm-yellow focus:border-transparent"
-                      placeholder="your.email@example.com"
+                      placeholder="info@kvmintls.com"
                       required
                     />
                   </div>
@@ -669,8 +669,8 @@ function HomePage() {
               &copy; {new Date().getFullYear()} KVM Truck Parts. All rights reserved.
             </p>
             <div className="flex flex-wrap justify-center gap-3 sm:gap-6">
-              <a href="#" className="text-gray-500 hover:text-white text-xs sm:text-sm transition-colors whitespace-nowrap">Privacy Policy</a>
-              <a href="#" className="text-gray-500 hover:text-white text-xs sm:text-sm transition-colors whitespace-nowrap">Terms of Service</a>
+              <Link to="/privacy-policy" className="text-gray-500 hover:text-white text-xs sm:text-sm transition-colors whitespace-nowrap">Privacy Policy</Link>
+              <Link to="/terms-of-service" className="text-gray-500 hover:text-white text-xs sm:text-sm transition-colors whitespace-nowrap">Terms of Service</Link>
               <a href="#" className="text-gray-500 hover:text-white text-xs sm:text-sm transition-colors whitespace-nowrap">Sitemap</a>
             </div>
           </div>
