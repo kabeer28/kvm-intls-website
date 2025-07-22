@@ -1,5 +1,6 @@
 import React from 'react';
 import { X, Image as ImageIcon } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 interface ProductDetailModalProps {
   isOpen: boolean;
@@ -67,12 +68,19 @@ const ProductDetailModal: React.FC<ProductDetailModalProps> = ({ isOpen, onClose
         
         <div className="flex-shrink-0 border-t border-gray-200 p-3 sm:p-4">
           <div className="flex flex-wrap gap-2 justify-center sm:justify-start">
-            <button className="bg-kvm-yellow text-kvm-black px-3 sm:px-4 py-1.5 sm:py-2 text-xs sm:text-sm rounded-lg hover:bg-opacity-90 hover:scale-105 transition-all duration-300 font-bold shadow hover:shadow-md whitespace-nowrap">
-              Request Quote
-            </button>
-            <button className="border border-kvm-yellow text-kvm-black px-3 sm:px-4 py-1.5 sm:py-2 text-xs sm:text-sm rounded-lg hover:bg-kvm-yellow/10 hover:scale-105 transition-all duration-300 font-medium whitespace-nowrap">
-              Contact Sales
-            </button>
+            <Link 
+              to="/#contact"
+              className="bg-kvm-yellow text-kvm-black px-3 sm:px-4 py-1.5 sm:py-2 text-xs sm:text-sm rounded-lg hover:bg-opacity-90 hover:scale-105 transition-all duration-300 font-bold shadow hover:shadow-md whitespace-nowrap inline-flex items-center justify-center"
+              onClick={onClose}
+            >
+              Contact Us
+            </Link>
+            <a 
+              href="tel:6477390354"
+              className="border border-kvm-yellow text-kvm-yellow px-3 sm:px-4 py-1.5 sm:py-2 text-xs sm:text-sm rounded-lg hover:bg-kvm-yellow hover:text-kvm-black transition-all duration-300 font-medium whitespace-nowrap inline-flex items-center justify-center"
+            >
+              Call Now
+            </a>
           </div>
         </div>
       </div>
