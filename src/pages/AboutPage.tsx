@@ -9,8 +9,15 @@ function AboutPage() {
       <Navbar />
 
       {/* Hero Section */}
-      <section className="relative bg-gradient-to-br from-kvm-black via-gray-900 to-gray-800 text-white overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-r from-kvm-yellow/5 to-transparent"></div>
+      <section className="relative bg-kvm-black text-white overflow-hidden">
+        <div className="absolute inset-0 bg-kvm-black"></div>
+        <div className="absolute inset-0 opacity-30"
+          style={{
+            backgroundImage: `repeating-linear-gradient(45deg, transparent, transparent 30px, rgba(245, 223, 114, 0.3) 30px, rgba(245, 223, 114, 0.3) 33px, transparent 33px, transparent 80px)`,
+            backgroundSize: '120px 120px',
+            animation: 'flow 30s linear infinite reverse',
+          }}>
+        </div>
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24">
           <div className="text-center">
             <div className="inline-block animate-fade-in-up">
@@ -24,11 +31,7 @@ function AboutPage() {
             </p>
           </div>
         </div>
-        
-        {/* Floating Elements */}
-        <div className="absolute top-20 left-10 w-20 h-20 bg-kvm-yellow/10 rounded-full animate-float"></div>
-        <div className="absolute bottom-20 right-10 w-32 h-32 bg-kvm-yellow/5 rounded-full animate-float animation-delay-1000"></div>
-        <div className="absolute top-1/2 left-1/4 w-16 h-16 bg-white/5 rounded-full animate-float animation-delay-500"></div>
+
       </section>
 
       {/* Main Content */}
@@ -164,8 +167,15 @@ function AboutPage() {
       </section>
 
       {/* Call to Action */}
-      <section className="py-20 bg-gradient-to-br from-kvm-black via-gray-900 to-gray-800 text-white relative overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-r from-kvm-yellow/10 to-transparent"></div>
+      <section className="py-16 bg-kvm-black text-white relative overflow-hidden">
+        <div className="absolute inset-0 bg-kvm-black"></div>
+        <div className="absolute inset-0 opacity-30"
+          style={{
+            backgroundImage: `repeating-linear-gradient(45deg, transparent, transparent 30px, rgba(245, 223, 114, 0.3) 30px, rgba(245, 223, 114, 0.3) 33px, transparent 33px, transparent 80px)`,
+            backgroundSize: '120px 120px',
+            animation: 'flow 30s linear infinite reverse',
+          }}>
+        </div>
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <div className="animate-fade-in-up">
             <h2 className="text-4xl font-bold mb-6">Call to Inquire</h2>
@@ -219,10 +229,7 @@ function AboutPage() {
             </Link>
           </div>
         </div>
-        
-        {/* Floating Elements */}
-        <div className="absolute top-10 right-10 w-24 h-24 bg-kvm-yellow/10 rounded-full animate-float"></div>
-        <div className="absolute bottom-10 left-10 w-16 h-16 bg-white/5 rounded-full animate-float animation-delay-1000"></div>
+
       </section>
 
 
