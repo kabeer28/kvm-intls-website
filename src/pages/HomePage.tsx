@@ -1,5 +1,5 @@
 import { useState, useEffect, useRef } from 'react';
-import { Wrench, Award, Zap, Users, MapPin, Phone, Mail, Clock, Facebook, Instagram, Linkedin, ArrowRight, CheckCircle, Send } from 'lucide-react';
+import { Wrench, Award, Zap, Users, MapPin, Phone, Mail, Clock, Facebook, Instagram, Linkedin, ArrowRight, CheckCircle, Send, Twitter } from 'lucide-react';
 import { Link, useLocation } from 'react-router-dom';
 import ImageCarousel from '../components/ImageCarousel';
 import Navbar from '../components/Navbar';
@@ -513,7 +513,7 @@ function HomePage() {
                   </div>
                   <div>
                     <h4 className="font-semibold text-sm sm:text-base">Our Location</h4>
-                    <p className="text-xs sm:text-sm text-gray-400 mt-0.5">1234 Truckers Way, Mississauga, ON L4W 1A1</p>
+                    <p className="text-xs sm:text-sm text-gray-400 mt-0.5"> Truckers Way, Mississauga, ON L4W 1A1</p>
                   </div>
                 </div>
                 
@@ -640,61 +640,34 @@ function HomePage() {
       {/* Footer */}
       <footer className="bg-kvm-black text-white py-8 sm:py-12">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 sm:gap-10">
-            <div>
-              <h3 className="text-lg sm:text-xl font-bold mb-3 sm:mb-4">KVM Truck Parts</h3>
-              <p className="text-gray-400 text-xs sm:text-sm leading-relaxed">Your trusted partner for heavy-duty truck parts and exceptional service in the GTA.</p>
-              <div className="flex space-x-4 mt-4 sm:mt-6">
-                <a href="#" className="text-gray-400 hover:text-kvm-yellow transition-colors p-1" aria-label="Facebook">
-                  <Facebook className="h-4 w-4 sm:h-5 sm:w-5" />
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 sm:gap-10">
+            <div>1234
+              <h3 className="font-bold text-white text-lg sm:text-xl mb-4">KVM Intls</h3>
+              <p className="text-gray-400 text-xs sm:text-sm mb-5 leading-relaxed">Industry leaders in heavy-duty truck and trailer parts distribution across the Greater Toronto Area.</p>
+              <div className="flex space-x-3">
+                <a href="#" className="bg-white bg-opacity-10 hover:bg-opacity-20 p-2 rounded-full transition-all" aria-label="Facebook">
+                  <Facebook className="h-4 w-4 sm:h-5 sm:w-5 text-white" />
                 </a>
-                <a href="#" className="text-gray-400 hover:text-kvm-yellow transition-colors p-1" aria-label="Instagram">
-                  <Instagram className="h-4 w-4 sm:h-5 sm:w-5" />
+                <a href="#" className="bg-white bg-opacity-10 hover:bg-opacity-20 p-2 rounded-full transition-all" aria-label="Twitter">
+                  <Twitter className="h-4 w-4 sm:h-5 sm:w-5 text-white" />
                 </a>
-                <a href="#" className="text-gray-400 hover:text-kvm-yellow transition-colors p-1" aria-label="LinkedIn">
-                  <Linkedin className="h-4 w-4 sm:h-5 sm:w-5" />
+                <a href="#" className="bg-white bg-opacity-10 hover:bg-opacity-20 p-2 rounded-full transition-all" aria-label="Instagram">
+                  <Instagram className="h-4 w-4 sm:h-5 sm:w-5 text-white" />
+                </a>
+                <a href="#" className="bg-white bg-opacity-10 hover:bg-opacity-20 p-2 rounded-full transition-all" aria-label="LinkedIn">
+                  <Linkedin className="h-4 w-4 sm:h-5 sm:w-5 text-white" />
                 </a>
               </div>
-            </div>
-            
-            <div>
-              <h4 className="font-semibold text-kvm-yellow text-sm sm:text-base mb-3 sm:mb-4">Quick Links</h4>
-              <ul className="space-y-2">
-                <li><a href="#" className="text-gray-400 hover:text-white transition-colors text-xs sm:text-sm block py-1">Home</a></li>
-                <li><a href="#products" className="text-gray-400 hover:text-white transition-colors text-xs sm:text-sm block py-1">Products</a></li>
-                <li><a href="#about" className="text-gray-400 hover:text-white transition-colors text-xs sm:text-sm block py-1">About Us</a></li>
-                <li><a href="#services" className="text-gray-400 hover:text-white transition-colors text-xs sm:text-sm block py-1">Services</a></li>
-                <li><a href="#contact" className="text-gray-400 hover:text-white transition-colors text-xs sm:text-sm block py-1">Contact</a></li>
-              </ul>
-            </div>
-            
-            <div>
-              <h4 className="font-semibold text-kvm-yellow text-sm sm:text-base mb-3 sm:mb-4">Our Services</h4>
-              <ul className="space-y-2">
-                <li><a href="#" className="text-gray-400 hover:text-white transition-colors text-xs sm:text-sm block py-1">Parts Supply</a></li>
-                <li><a href="#" className="text-gray-400 hover:text-white transition-colors text-xs sm:text-sm block py-1">Fleet Maintenance</a></li>
-                <li><a href="#" className="text-gray-400 hover:text-white transition-colors text-xs sm:text-sm block py-1">Emergency Support</a></li>
-                <li><a href="#" className="text-gray-400 hover:text-white transition-colors text-xs sm:text-sm block py-1">Technical Consultation</a></li>
-              </ul>
             </div>
             
             <div className="mt-4 sm:mt-0">
-              <h4 className="font-semibold text-kvm-yellow text-sm sm:text-base mb-3 sm:mb-4">Newsletter</h4>
-              <p className="text-gray-400 text-xs sm:text-sm mb-3 sm:mb-4 leading-relaxed">Subscribe to our newsletter for the latest updates and offers.</p>
-              <div className="flex flex-col sm:flex-row gap-2">
-                <input 
-                  type="email" 
-                  placeholder="Your email" 
-                  className="bg-gray-800 text-white px-3 sm:px-4 py-2 rounded-lg sm:rounded-r-none focus:outline-none focus:ring-2 focus:ring-kvm-yellow w-full text-xs sm:text-sm"
-                  aria-label="Email address"
-                />
-                <button 
-                  className="bg-kvm-yellow text-kvm-black px-4 py-2 rounded-lg sm:rounded-l-none font-medium hover:bg-opacity-90 transition-all text-xs sm:text-sm whitespace-nowrap"
-                  aria-label="Subscribe to newsletter"
-                >
-                  Subscribe
-                </button>
-              </div>
+              <h4 className="font-semibold text-kvm-yellow text-sm sm:text-base mb-3 sm:mb-4">Contact</h4>
+              <address className="not-italic text-gray-400 text-xs sm:text-sm leading-relaxed">
+                <p>6955 Davand Drive Unit #1</p>
+                <p>Mississauga, ON L5T 1L5</p>
+                <p className="mt-2">Phone: <a href="tel:9056701500" className="hover:text-white transition-colors">(905) 670-1500</a></p>
+                <p>Email: <a href="mailto:info@kvmintls.com" className="hover:text-white transition-colors">info@kvmintls.com</a></p>
+              </address>
             </div>
           </div>
           
