@@ -153,12 +153,9 @@ function AboutPage() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div className="text-center group animate-slide-in-up">
               <div className="bg-gradient-to-br from-kvm-yellow/20 to-kvm-yellow/10 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-all duration-500 shadow-lg">
-                <div className="flex items-center space-x-2">
-                  <Wrench className="h-6 w-6 text-kvm-yellow" />
-                  <span className="text-sm font-semibold text-kvm-yellow">25+ Years Experience</span>
-                </div>
+                <Wrench className="h-8 w-8 text-kvm-black" />
               </div>
-              <h3 className="text-2xl font-bold text-kvm-black mb-4">Excellence</h3>
+              <h3 className="text-2xl font-bold text-kvm-black mb-2">10+ Years Experience</h3>
               <p className="text-gray-600 leading-relaxed">
                 Committed to delivering superior quality in every component and service we provide to our valued customers.
               </p>

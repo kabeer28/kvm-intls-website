@@ -345,7 +345,7 @@ function HomePage() {
             <div className="animate-slide-in-left">
               <h2 className="text-4xl font-bold text-kvm-black mb-6">Industry Leaders in Heavy-Duty Parts Distribution</h2>
               <p className="text-lg text-gray-600 mb-8 leading-relaxed">
-                KVM Intls has established itself as the premier distributor of heavy-duty truck and trailer parts across the Greater Toronto Area. Our commitment to quality, local manufacturing capabilities, and extensive network of partnerships make us the trusted choice for over 400 accounts.
+                KVM International Solutions has established itself as the premier distributor of heavy-duty truck and trailer parts across the Greater Toronto Area. Our commitment to quality, local manufacturing capabilities, and extensive network of partnerships make us the trusted choice for over 400 accounts.
               </p>
               
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 mb-8">
@@ -523,7 +523,7 @@ function HomePage() {
                   </div>
                   <div>
                     <h4 className="font-semibold text-sm sm:text-base">Phone</h4>
-                    <a href="tel:+14165551234" className="text-xs sm:text-sm text-gray-400 hover:text-kvm-yellow transition-colors mt-0.5 block">+1 (416) 555-1234</a>
+                    <a href="tel:+16477390354" className="text-xs sm:text-sm text-gray-400 hover:text-kvm-yellow transition-colors mt-0.5 block">+1 (647) 739-0354</a>
                   </div>
                 </div>
                 
@@ -642,7 +642,7 @@ function HomePage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 sm:gap-10">
             <div>
-              <h3 className="font-bold text-white text-lg sm:text-xl mb-4">KVM Intls</h3>
+              <h3 className="font-bold text-white text-lg sm:text-xl mb-4">KVM International Solutions</h3>
               <p className="text-gray-400 text-xs sm:text-sm mb-5 leading-relaxed">Industry leaders in heavy-duty truck and trailer parts distribution across the Greater Toronto Area.</p>
               <div className="flex space-x-3">
                 <a href="#" className="bg-white bg-opacity-10 hover:bg-opacity-20 p-2 rounded-full transition-all" aria-label="Facebook">
@@ -663,7 +663,6 @@ function HomePage() {
             <div className="mt-4 sm:mt-0">
               <h4 className="font-semibold text-kvm-yellow text-sm sm:text-base mb-3 sm:mb-4">Contact</h4>
               <address className="not-italic text-gray-400 text-xs sm:text-sm leading-relaxed">
-                <p>6955 Davand Drive Unit #1</p>
                 <p>6625 Tomken Road, Unit 6 & 7, Mississauga, ON L5T 2C2</p>
                 <p className="mt-2">Phone: <a href="tel:6477390354" className="hover:text-white transition-colors">(647) 739-0354</a></p>
                 <p>Email: <a href="mailto:info@kvmintls.com" className="hover:text-white transition-colors">info@kvmintls.com</a></p>
