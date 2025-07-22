@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import { ArrowRight } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import ProductDetailModal from '../components/ProductDetailModal';
-import ContactModal from '../components/ContactModal';
 import Navbar from '../components/Navbar';
 
 // Import product images
@@ -111,7 +110,6 @@ const products = [
 const ProductsPage: React.FC = () => {
   const [selectedProduct, setSelectedProduct] = useState<typeof products[0] | null>(null);
   const [isModalOpen, setIsModalOpen] = useState(false);
-  const [isContactModalOpen, setIsContactModalOpen] = useState(false);
   const [activeCategory, setActiveCategory] = useState<string>('All');
   
   // Get unique categories
@@ -132,12 +130,9 @@ const ProductsPage: React.FC = () => {
     setSelectedProduct(null);
   };
 
-  const openContactModal = () => setIsContactModalOpen(true);
-  const closeContactModal = () => setIsContactModalOpen(false);
-
   return (
     <div className="min-h-screen bg-white">
-      <Navbar onOpenContactModal={openContactModal} />
+      <Navbar />
 
       {/* Products Header */}
       <section className="relative bg-gradient-to-br from-kvm-black via-gray-900 to-gray-800 text-white py-16 overflow-hidden">
@@ -227,12 +222,12 @@ const ProductsPage: React.FC = () => {
             </p>
           </div>
           <div className="flex flex-col sm:flex-row gap-4 justify-center animate-fade-in-up animation-delay-300">
-            <button 
-              onClick={openContactModal}
-              className="bg-kvm-yellow text-kvm-black px-8 py-4 rounded-lg hover:bg-opacity-90 hover:scale-105 transition-all duration-300 font-bold text-lg shadow-xl hover:shadow-2xl"
+            <Link 
+              to="/#contact"
+              className="bg-kvm-yellow text-kvm-black px-8 py-4 rounded-lg hover:bg-opacity-90 hover:scale-105 transition-all duration-300 font-bold text-lg shadow-xl hover:shadow-2xl inline-flex items-center justify-center"
             >
               Contact Our Experts
-            </button>
+            </Link>
             <Link 
               to="/"
               className="border-2 border-kvm-yellow text-kvm-yellow px-8 py-4 rounded-lg hover:bg-kvm-yellow hover:text-kvm-black transition-all duration-300 font-bold text-lg inline-flex items-center justify-center group"
@@ -253,8 +248,6 @@ const ProductsPage: React.FC = () => {
         onClose={closeModal}
         product={selectedProduct}
       />
-
-      <ContactModal isOpen={isContactModalOpen} onClose={closeContactModal} />
     </div>
   );
 };

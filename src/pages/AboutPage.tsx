@@ -1,18 +1,12 @@
-import { useState } from 'react';
 import { ArrowRight, Target, Award, Users, CheckCircle, Phone, Mail, MapPin, Wrench } from 'lucide-react';
 import { Link } from 'react-router-dom';
-import ContactModal from '../components/ContactModal';
 import Navbar from '../components/Navbar';
 
 function AboutPage() {
-  const [isContactModalOpen, setIsContactModalOpen] = useState(false);
-
-  const openContactModal = () => setIsContactModalOpen(true);
-  const closeContactModal = () => setIsContactModalOpen(false);
 
   return (
     <div className="min-h-screen bg-white">
-      <Navbar onOpenContactModal={openContactModal} />
+      <Navbar />
 
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-kvm-black via-gray-900 to-gray-800 text-white overflow-hidden">
@@ -210,12 +204,12 @@ function AboutPage() {
           </div>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center animate-fade-in-up animation-delay-600">
-            <button 
-              onClick={openContactModal}
-              className="bg-kvm-yellow text-kvm-black px-8 py-4 rounded-lg hover:bg-opacity-90 hover:scale-105 transition-all duration-300 font-bold text-lg shadow-xl hover:shadow-2xl"
+            <Link 
+              to="/#contact"
+              className="bg-kvm-yellow text-kvm-black px-8 py-4 rounded-lg hover:bg-opacity-90 hover:scale-105 transition-all duration-300 font-bold text-lg shadow-xl hover:shadow-2xl inline-flex items-center justify-center"
             >
               Get Personalized Quote
-            </button>
+            </Link>
             <Link 
               to="/products"
               className="border-2 border-kvm-yellow text-kvm-yellow px-8 py-4 rounded-lg hover:bg-kvm-yellow hover:text-kvm-black transition-all duration-300 font-bold text-lg inline-flex items-center justify-center group"
@@ -231,7 +225,7 @@ function AboutPage() {
         <div className="absolute bottom-10 left-10 w-16 h-16 bg-white/5 rounded-full animate-float animation-delay-1000"></div>
       </section>
 
-      <ContactModal isOpen={isContactModalOpen} onClose={closeContactModal} />
+
     </div>
   );
 }
