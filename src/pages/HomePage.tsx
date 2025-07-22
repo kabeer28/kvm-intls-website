@@ -1,5 +1,5 @@
 import { useState, useEffect, useRef } from 'react';
-import { Wrench, Award, Zap, Users, MapPin, Phone, Mail, Clock, Facebook, Instagram, Linkedin, ArrowRight, CheckCircle, Send, Twitter } from 'lucide-react';
+import { Wrench, Award, Zap, Users, MapPin, Phone, Mail, Clock, Facebook, Instagram, ArrowRight, CheckCircle, Send } from 'lucide-react';
 import { Link, useLocation } from 'react-router-dom';
 import ImageCarousel from '../components/ImageCarousel';
 import Navbar from '../components/Navbar';
@@ -424,7 +424,7 @@ function HomePage() {
             <div className="bg-white rounded-xl p-8 text-center shadow-lg hover:shadow-2xl transition-all duration-500 border-b-4 border-kvm-yellow hover:-translate-y-4 group animate-slide-in-up">
               <div className="w-32 h-32 flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300">
                 <img
-                  src="/images/logos/marathon-logo.png"
+                  src={`${import.meta.env.BASE_URL}images/logos/marathon-logo.png`}
                   alt="Marathon"
                   className="w-full h-full object-contain"
                 />
@@ -441,7 +441,7 @@ function HomePage() {
             <div className="bg-white rounded-xl p-8 text-center shadow-lg hover:shadow-2xl transition-all duration-500 border-b-4 border-kvm-yellow hover:-translate-y-4 group animate-slide-in-up animation-delay-200">
               <div className="w-32 h-32 flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300">
                 <img
-                  src="/images/logos/silverback-logo.png"
+                  src={`${import.meta.env.BASE_URL}images/logos/silverback-logo.png`}
                   alt="Silverback"
                   className="w-full h-full object-contain"
                 />
@@ -458,7 +458,7 @@ function HomePage() {
             <div className="bg-white rounded-xl p-8 text-center shadow-lg hover:shadow-2xl transition-all duration-500 border-b-4 border-kvm-yellow hover:-translate-y-4 group animate-slide-in-up animation-delay-400">
               <div className="w-32 h-32 flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300">
                 <img
-                  src="/images/logos/automann-logo.png"
+                  src={`${import.meta.env.BASE_URL}images/logos/automann-logo.png`}
                   alt="Automann"
                   className="w-full h-full object-contain"
                 />
@@ -475,7 +475,7 @@ function HomePage() {
             <div className="bg-white rounded-xl p-8 text-center shadow-lg hover:shadow-2xl transition-all duration-500 border-b-4 border-kvm-yellow hover:-translate-y-4 group animate-slide-in-up animation-delay-600">
               <div className="w-32 h-32 flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300">
                 <img
-                  src="/images/logos/brakeworks-logo.png"
+                  src={`${import.meta.env.BASE_URL}images/logos/brakeworks-logo.png`}
                   alt="Brakeworks"
                   className="w-full h-full object-contain"
                 />
@@ -648,14 +648,8 @@ function HomePage() {
                 <a href="#" className="bg-white bg-opacity-10 hover:bg-opacity-20 p-2 rounded-full transition-all" aria-label="Facebook">
                   <Facebook className="h-4 w-4 sm:h-5 sm:w-5 text-white" />
                 </a>
-                <a href="#" className="bg-white bg-opacity-10 hover:bg-opacity-20 p-2 rounded-full transition-all" aria-label="Twitter">
-                  <Twitter className="h-4 w-4 sm:h-5 sm:w-5 text-white" />
-                </a>
-                <a href="#" className="bg-white bg-opacity-10 hover:bg-opacity-20 p-2 rounded-full transition-all" aria-label="Instagram">
+                <a href="https://www.instagram.com/kvmintls/" target="_blank" rel="noopener noreferrer" className="bg-white bg-opacity-10 hover:bg-opacity-20 p-2 rounded-full transition-all" aria-label="Instagram">
                   <Instagram className="h-4 w-4 sm:h-5 sm:w-5 text-white" />
-                </a>
-                <a href="#" className="bg-white bg-opacity-10 hover:bg-opacity-20 p-2 rounded-full transition-all" aria-label="LinkedIn">
-                  <Linkedin className="h-4 w-4 sm:h-5 sm:w-5 text-white" />
                 </a>
               </div>
             </div>

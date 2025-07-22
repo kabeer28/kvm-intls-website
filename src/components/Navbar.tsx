@@ -16,13 +16,13 @@ const Navbar: React.FC = () => {
           <Link to="/" className="flex items-center group gap-6">
             <div className="relative">
               <img 
-                src="/images/truck.png" 
+                src={`${import.meta.env.BASE_URL}images/truck.png`} 
                 alt="Truck Logo" 
                 className="h-24 w-auto transition-all duration-500 group-hover:scale-110 group-hover:rotate-3" 
               />
             </div>
             <img 
-              src="/images/kvm.png" 
+              src={`${import.meta.env.BASE_URL}images/kvm.png`} 
               alt="KVM Text Logo" 
               className="h-8 w-auto transition-all duration-300 group-hover:translate-x-1" 
             />
