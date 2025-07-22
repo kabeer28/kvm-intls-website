@@ -50,7 +50,7 @@ const ContactModal: React.FC<ContactModalProps> = ({ isOpen, onClose }) => {
 
   const contactInfo = {
     email: 'info@kvmintls.com',
-    phone: '+1 647-739-0354',
+    phone: '(647) 739-0354',
     address: '6625 Tomken Road, Unit 6 & 7, Mississauga, ON L5T 2C2'
   };
 

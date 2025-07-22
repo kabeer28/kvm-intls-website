@@ -177,7 +177,7 @@ function AboutPage() {
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12 animate-slide-in-up animation-delay-300">
             <button 
-              onClick={() => window.location.href = 'tel:+16477390354'}
+              onClick={() => window.location.href = 'tel:6477390354'}
               className="bg-white/10 backdrop-blur-sm rounded-2xl p-6 border border-kvm-yellow/30 hover:bg-white/20 transition-all duration-500 hover:-translate-y-2 group"
             >
               <Phone className="h-8 w-8 text-kvm-yellow mx-auto mb-4 group-hover:scale-110 transition-transform" />
@@ -199,7 +199,7 @@ function AboutPage() {
             <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-6 border border-kvm-yellow/30 hover:bg-white/20 transition-all duration-500 hover:-translate-y-2 animation-delay-400">
               <MapPin className="h-8 w-8 text-kvm-yellow mx-auto mb-4" />
               <h3 className="text-lg font-semibold mb-2">Location</h3>
-              <p className="text-gray-300">Mississauga, ON</p>
+              <p className="text-gray-300">6625 Tomken Road, Unit 6 & 7, Mississauga, ON L5T 2C2</p>
             </div>
           </div>
           

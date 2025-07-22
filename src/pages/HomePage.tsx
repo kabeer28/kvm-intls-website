@@ -513,7 +513,7 @@ function HomePage() {
                   </div>
                   <div>
                     <h4 className="font-semibold text-sm sm:text-base">Our Location</h4>
-                    <p className="text-xs sm:text-sm text-gray-400 mt-0.5"> Truckers Way, Mississauga, ON L4W 1A1</p>
+                    <p className="text-xs sm:text-sm text-gray-400 mt-0.5">6625 Tomken Road, Unit 6 & 7, Mississauga, ON L5T 2C2</p>
                   </div>
                 </div>
                 
@@ -641,7 +641,7 @@ function HomePage() {
       <footer className="bg-kvm-black text-white py-8 sm:py-12">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 sm:gap-10">
-            <div>1234
+            <div>
               <h3 className="font-bold text-white text-lg sm:text-xl mb-4">KVM Intls</h3>
               <p className="text-gray-400 text-xs sm:text-sm mb-5 leading-relaxed">Industry leaders in heavy-duty truck and trailer parts distribution across the Greater Toronto Area.</p>
               <div className="flex space-x-3">
@@ -664,8 +664,8 @@ function HomePage() {
               <h4 className="font-semibold text-kvm-yellow text-sm sm:text-base mb-3 sm:mb-4">Contact</h4>
               <address className="not-italic text-gray-400 text-xs sm:text-sm leading-relaxed">
                 <p>6955 Davand Drive Unit #1</p>
-                <p>Mississauga, ON L5T 1L5</p>
-                <p className="mt-2">Phone: <a href="tel:9056701500" className="hover:text-white transition-colors">(905) 670-1500</a></p>
+                <p>6625 Tomken Road, Unit 6 & 7, Mississauga, ON L5T 2C2</p>
+                <p className="mt-2">Phone: <a href="tel:6477390354" className="hover:text-white transition-colors">(647) 739-0354</a></p>
                 <p>Email: <a href="mailto:info@kvmintls.com" className="hover:text-white transition-colors">info@kvmintls.com</a></p>
               </address>
             </div>
