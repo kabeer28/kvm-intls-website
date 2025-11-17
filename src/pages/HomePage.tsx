@@ -201,15 +201,15 @@ function HomePage() {
                 <div className="grid grid-cols-2 gap-2 xs:gap-3 sm:gap-4">
                   <div className="text-center p-2 sm:p-3 bg-white/5 rounded-lg">
                     <div className="text-2xl xs:text-3xl font-bold text-kvm-yellow animate-pulse-slow">400+</div>
-                    <div className="text-xs xs:text-sm text-gray-300 mt-1">Accounts Served</div>
+                    <div className="text-xs xs:text-sm text-gray-300 mt-1">Active Accounts</div>
                   </div>
                   <div className="text-center p-2 sm:p-3 bg-white/5 rounded-lg">
                     <div className="text-2xl xs:text-3xl font-bold text-kvm-yellow animate-pulse-slow animation-delay-100">25K+</div>
                     <div className="text-xs xs:text-sm text-gray-300 mt-1">Parts Available</div>
                   </div>
                   <div className="text-center p-2 sm:p-3 bg-white/5 rounded-lg">
-                    <div className="text-2xl xs:text-3xl font-bold text-kvm-yellow animate-pulse-slow animation-delay-200">Local</div>
-                    <div className="text-xs xs:text-sm text-gray-300 mt-1">Manufacturing</div>
+                    <div className="text-2xl xs:text-3xl font-bold text-kvm-yellow animate-pulse-slow animation-delay-200">Reliable</div>
+                    <div className="text-xs xs:text-sm text-gray-300 mt-1">Services</div>
                   </div>
                   <div className="text-center p-2 sm:p-3 bg-white/5 rounded-lg">
                     <div className="text-2xl xs:text-3xl font-bold text-kvm-yellow animate-pulse-slow animation-delay-300">GTA</div>
