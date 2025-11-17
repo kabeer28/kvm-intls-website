@@ -19,6 +19,10 @@ import airDryersImg from '../assets/images/parts/air-dryers.png';
 import camshaftsImg from '../assets/images/parts/camshafts.png';
 import wheelSealsImg from '../assets/images/parts/wheel-seals-and-bearings.png';
 import torqueRodsImg from '../assets/images/parts/torque-rod-and-drag-links.png';
+import fifthWheelImg from '../assets/images/parts/fifth-wheel.png';
+import landingGearImg from '../assets/images/parts/landing-gear.png';
+import SpicerImg from '../assets/images/parts/ujoint.png';
+import hubsImg from '../assets/images/parts/hubs.png';
 
 const products = [
   {
@@ -104,6 +108,30 @@ const products = [
     description: 'Heavy-duty suspension components providing precise axle alignment and stability under load.',
     image: torqueRodsImg,
     category: 'Suspension'
+  },
+  {
+    name: 'Holland Fifth Wheel',
+    description: 'Reliable Holland fifth wheels built for secure coupling, strength, and long-term durability. Engineered for heavy-duty trucks requiring dependable connection and smooth trailer engagement.',
+    image: fifthWheelImg,
+    category: 'Coupling Systems'
+  },
+  {
+    name: 'Landing Gear',
+    description: 'Durable trailer landing gear providing stable support, smooth operation, and long-lasting performance. Designed for demanding environments and consistent reliability in daily commercial trailer applications.',
+    image: landingGearImg, 
+    category: 'Trailer Components'
+  },
+  {
+    name: 'Spicer U-Joint',
+    description: 'Genuine Spicer U-joints engineered for strength, smooth driveline performance, and extended lifespan. Perfect for heavy-duty vehicles needing reliable, high-quality drivetrain components.',
+    image: SpicerImg, 
+    category: 'Drivetrain'
+  },
+  {
+    name: 'Hubs',
+    description: 'Strong, precision-built wheel hubs designed for heavy-duty use. Provides stable rotation, improved durability, and dependable performance for commercial truck and trailer applications.',
+    image: hubsImg,
+    category: 'Wheel End'
   }
 ];
 
@@ -211,8 +239,16 @@ const ProductsPage: React.FC = () => {
                     <img
                       src={product.image}
                       alt={product.name}
-                      className="max-h-full max-w-full object-contain transition-transform duration-500 group-hover:scale-105"
-                      style={{ maxHeight: '180px' }}
+                      className={`max-h-full max-w-full object-contain transition-transform duration-500 group-hover:scale-105 ${
+                        product.name === 'Spicer U-Joint' ? 'object-center' : ''
+                      }`}
+                      style={{ 
+                        maxHeight: '180px',
+                        ...(product.name === 'Spicer U-Joint' ? { 
+                          objectPosition: 'center center',
+                          transform: 'translateX(10px)' // Slight adjustment to center the cropped image
+                        } : {})
+                      }}
                     />
                   </div>
                 </div>

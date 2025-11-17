@@ -19,6 +19,10 @@ import shocks from '../assets/images/parts/shocks.png';
 import slackAdjusters from '../assets/images/parts/slack-adjusters.png';
 import torqueRodAndDragLinks from '../assets/images/parts/torque-rod-and-drag-links.png';
 import wheelSealsAndBearings from '../assets/images/parts/wheel-seals-and-bearings.png';
+import fifthWheel from '../assets/images/parts/fifth-wheel.png';
+import landingGear from '../assets/images/parts/landing-gear.png';
+import spicerUjoint from '../assets/images/parts/ujoint.png';
+import hubs from '../assets/images/parts/hubs.png';
 
 // All product images array
 const productImages = [
@@ -36,6 +40,10 @@ const productImages = [
   wheelSealsAndBearings,
   airTanks,
   torqueRodAndDragLinks,
+  fifthWheel,
+  landingGear,
+  spicerUjoint,
+  hubs,
 ];
 
 function HomePage() {
@@ -409,88 +417,6 @@ function HomePage() {
         </div>
       </section>
 
-      {/* Partners Section */}
-      <section id="partners" className="py-20 bg-gradient-to-br from-gray-50 to-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16 animate-fade-in-up">
-            <h2 className="text-4xl font-bold text-kvm-black mb-4">Authorized Brand Partners</h2>
-            <div className="w-24 h-1 bg-kvm-yellow mx-auto mb-6 rounded-full"></div>
-            <p className="text-xl text-gray-600">
-              We work with industry-leading manufacturers to bring you the highest quality parts
-            </p>
-          </div>
-          
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-            <div className="bg-white rounded-xl p-8 text-center shadow-lg hover:shadow-2xl transition-all duration-500 border-b-4 border-kvm-yellow hover:-translate-y-4 group animate-slide-in-up">
-              <div className="w-32 h-32 flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300">
-                <img
-                  src={`${import.meta.env.BASE_URL}images/logos/marathon-logo.png`}
-                  alt="Marathon"
-                  className="w-full h-full object-contain"
-                />
-              </div>
-              <h3 className="text-2xl font-bold text-kvm-black mb-4">Marathon</h3>
-              <p className="text-gray-600 mb-4">
-                Authorized distributor for Marathon shock absorbers, known for their superior performance and reliability in heavy-duty applications.
-              </p>
-              <div className="bg-kvm-yellow/10 rounded-lg p-4 border border-kvm-yellow/20 group-hover:bg-kvm-yellow/20 transition-colors">
-                <span className="text-kvm-black font-semibold">Premium Shock Systems</span>
-              </div>
-            </div>
-
-            <div className="bg-white rounded-xl p-8 text-center shadow-lg hover:shadow-2xl transition-all duration-500 border-b-4 border-kvm-yellow hover:-translate-y-4 group animate-slide-in-up animation-delay-200">
-              <div className="w-32 h-32 flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300">
-                <img
-                  src={`${import.meta.env.BASE_URL}images/logos/silverback-logo.png`}
-                  alt="Silverback"
-                  className="w-full h-full object-contain"
-                />
-              </div>
-              <h3 className="text-2xl font-bold text-kvm-black mb-4">Silverback</h3>
-              <p className="text-gray-600 mb-4">
-                Trusted partner for premium heavy-duty components, delivering exceptional quality and performance for commercial vehicle applications.
-              </p>
-              <div className="bg-kvm-yellow/10 rounded-lg p-4 border border-kvm-yellow/20 group-hover:bg-kvm-yellow/20 transition-colors">
-                <span className="text-kvm-black font-semibold">Heavy-Duty Components</span>
-              </div>
-            </div>
-
-            <div className="bg-white rounded-xl p-8 text-center shadow-lg hover:shadow-2xl transition-all duration-500 border-b-4 border-kvm-yellow hover:-translate-y-4 group animate-slide-in-up animation-delay-400">
-              <div className="w-32 h-32 flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300">
-                <img
-                  src={`${import.meta.env.BASE_URL}images/logos/automann-logo.png`}
-                  alt="Automann"
-                  className="w-full h-full object-contain"
-                />
-              </div>
-              <h3 className="text-2xl font-bold text-kvm-black mb-4">Automann</h3>
-              <p className="text-gray-600 mb-4">
-                Strategic partnership providing access to over 25,000 parts, ensuring comprehensive coverage for all your heavy-duty needs.
-              </p>
-              <div className="bg-kvm-yellow/10 rounded-lg p-4 border border-kvm-yellow/20 group-hover:bg-kvm-yellow/20 transition-colors">
-                <span className="text-kvm-black font-semibold">25,000+ Parts Available</span>
-              </div>
-            </div>
-
-            <div className="bg-white rounded-xl p-8 text-center shadow-lg hover:shadow-2xl transition-all duration-500 border-b-4 border-kvm-yellow hover:-translate-y-4 group animate-slide-in-up animation-delay-600">
-              <div className="w-32 h-32 flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300">
-                <img
-                  src={`${import.meta.env.BASE_URL}images/logos/brakeworks-logo.png`}
-                  alt="Brakeworks"
-                  className="w-full h-full object-contain"
-                />
-              </div>
-              <h3 className="text-2xl font-bold text-kvm-black mb-4">Brakeworks</h3>
-              <p className="text-gray-600 mb-4">
-                Authorized distributor for Brakeworks brake systems and components, providing reliable stopping power for commercial vehicles.
-              </p>
-              <div className="bg-kvm-yellow/10 rounded-lg p-4 border border-kvm-yellow/20 group-hover:bg-kvm-yellow/20 transition-colors">
-                <span className="text-kvm-black font-semibold">Professional Brake Systems</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
 
       {/* Contact Section */}
       <section id="contact" ref={contactRef} className="py-12 sm:py-16 md:py-20 bg-kvm-black text-white"> 

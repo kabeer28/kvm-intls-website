@@ -50,6 +50,16 @@ const Navbar: React.FC = () => {
             </Link>
             
             <Link 
+              to="/brands" 
+              className={`relative px-0 py-2 flex flex-col items-center ${isActive('/brands') ? 'text-kvm-black font-bold' : 'text-gray-700 hover:text-kvm-black'} transition-colors duration-300`}
+            >
+              <span className="relative z-10">Brands</span>
+              {isActive('/brands') && (
+                <span className="absolute -bottom-1 left-0 w-full h-1 bg-kvm-yellow"></span>
+              )}
+            </Link>
+            
+            <Link 
               to="/about" 
               className={`relative px-0 py-2 flex flex-col items-center ${isActive('/about') ? 'text-kvm-black font-bold' : 'text-gray-700 hover:text-kvm-black'} transition-colors duration-300`}
             >
